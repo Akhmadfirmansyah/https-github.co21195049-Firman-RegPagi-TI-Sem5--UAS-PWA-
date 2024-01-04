@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firman - uas portfolio</title>
+
+  <meta name="theme-color" content="#colorcode">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/logo12.png" >
+
+  <link rel="manifest" href="web.webmanifest">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-messaging.js"></script>
+</head>
+
+<body id="top" class="dark_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">Firman<span>.</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+        <label for="lang">Choose a language:</label>
+        <select name="language" id="lang">
+          <option value="en">En</option>
+          <option value="ar">Ar</option>
+        </select>
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#biografi" class="navbar-link">Biografi</a>
+          </li>
+
+          <li>
+            <a href="#notification" class="navbar-link">Push Notification</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Indexdb</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+
+        <figure class="hero-banner">
+
+          <picture>
+            <source srcset="./assets/images/GambarFirman2.webp" media="(min-width: 768px)">
+            <source srcset="./assets/images/GambarFirman1.webp" media="(min-width: 500px)">
+            <img src="./assets/images/GambarFirman.webp" alt="A man in a blue shirt with a happy expression"
+              class="w-100">
+          </picture>
+
+        </figure>
+
+        <div class="hero-content">
+         
+          <h2 class="h2 hero-title"> Akhmad Lutfi Firmanyah</h2>
+
+          <a href="#contact" class="btn btn-primary">Silahkan Klik</a>
+
+        </div>
+
+        <ul class="hero-social-list">
+
+          <li>
+            <a href="https://www.facebook.com/akhmad.lutfifirmansyah" class="hero-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+
+              <div class="tooltip">Facebook</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://instagram.com/akhmad_firmansyah07?igshid=ZGUzMzM3NWJiOQ==" class="hero-social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+
+              <div class="tooltip">Instagram</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://wa.me/message/SWLSSQA55HQVC1" class="hero-social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+
+              <div class="tooltip">Whatsapp</div>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" id="stats">
+        <ul class="stats-list">
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-1.webp"  alt="Badge icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                12+ <strong>Years of Experience</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-2.png"  alt="Checkmark icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                230+ <strong>Completed Projects</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                95+ <strong>Happy Clients</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="biografi">
+
+        <figure class="about-banner">
+          <source srcset="image.avif" type="image/avif">
+          <source srcset="image.webp" type="image/webp">
+          <img src="./assets/images/Firman.webp" alt="A man in a alice blue shirt with a thinking expression"
+            class="w-100">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">About me</p>
+
+          <h2 class="h3 section-title">My self introduction</h2>
+
+          <p class="section-text">
+            Hello perkenalkan nama saya Akhmad Lutfi Firmansyah, biasa dipanggil  firman.
+            Tujuan Saya Belajar mobile Programing PWA (Progressive Web App) adalah untuk lebih mengetahui 
+            tentang program-program atau fitur-fitur yang terdapat pada programing pwa
+            dan agar bisa diimplementasikan didunia kerja jika dibutuhkanya aplikasi berbasis web yang sederhana.
+            
+          </p>
+          <div class="btn-group">
+            <a href="https://instagram.com/akhmad_firmansyah07?igshid=ZGUzMzM3NWJiOQ==" class="btn btn-secondary">Hire me</a>
+
+            <a href="#" class="btn btn-primary" download>Download cv</a>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="skills" id="notification">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">Push Notifications</p>
+
+          <h2 class="h3 section-title">Push Notifications</h2>
+
+          <p class="section-text">
+            Klik Tombol Notification untuk mendapatkan token yang akan di tambahkan pada fire based cloud messegings.
+          </p>
+
+          <!-- <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+            <button class="toggle-btn" data-toggle-btn>Tools</button>
+
+            
+          </div> -->
+
+        <div id="token"></div>
+        <div id="msg"></div>
+        <div id="notis"></div>
+        <div id="err"></div>
+
+        <button id="enableNotifications" class="toggle-btn" data-toggle-box id="tombol">🔔 Enable Push Notifications</button>
+
+        </div>
+     
+      </section>
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Index DB</p>
+
+          <h2 class="h3 section-title">IndexDB</h2>
+
+          <p class="section-text">
+            Masukan Pesan Anda Jika terdapat pesan yang mau disampaikan
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+
+                <address class="contact-info">
+                 Ds. Sidaharja Kecamatan Suradadi Kabupaten Tegal
+                </address>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+
+                <a href="tel:085878871776" class="contact-info">085878871776</a>
+
+                <a href="tel:085325176138" class="contact-info">085325176138</a>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:akhmadfirmansyah07@gmail.com" class="contact-info">akhmadfirmansyah07@gmail.com</a>
+
+                <a href="mailto:sapab319@gmail.com" class="contact-info">sapab319@gmail.com</a>
+              </div>
+
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <li>
+                  <a href="https://www.facebook.com/akhmad.lutfifirmansyah" class="contact-social-link">
+                    <div class="tooltip">Facebook</div>
+
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://instagram.com/akhmad_firmansyah07?igshid=ZGUzMzM3NWJiOQ==" class="contact-social-link">
+                    <div class="tooltip">Instagram</div>
+
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://wa.me/message/SWLSSQA55HQVC1" class="contact-social-link">
+                    <div class="tooltip">Whatsapp</div>
+
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Youtube</div>
+
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form id="contact" action="" class="contact-form">
+
+          <div class="form-wrapper">
+
+            <label for="name" class="form-label">Name</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field">
+
+              <ion-icon name="person-circle"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com"
+                class="input-field">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="phone" class="form-label">Phone</label>
+
+            <div class="input-wrapper">
+
+              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="message" class="form-label">Message</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="message" id="message" required placeholder="Write message..."
+                class="input-field"></textarea>
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          Firman<span>.</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2024 <a href="#">Akhmad Lutfi Firmansyah</a>. All rights reserved
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="indexdb.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', init, false);
+
+function init() {
+    if ('serviceWorker' in navigator && navigator.onLine) {
+        navigator.serviceWorker.register('/service-worker.js')
+        .then((reg) => {
+            console.log('Registrasi service worker Berhasil', reg);
+        }, (err) => {
+            console.error('Registrasi service worker Gagal', err);
+        });
+    }
+}
+  </script>
+
+<script>
+ window.onload = () => {
+"use strict";
+
+const notificationButton = document.getElementById("enableNotifications");
+let swRegistration = null;
+const TokenElem = document.getElementById("token");
+const ErrElem = document.getElementById("err");
+
+// Initialize Firebase
+// TODO: Replace with your project's customized code snippet
+const config = { 
+  apiKey: "AIzaSyAQDneT2iTUKaIvw2nVO0mUEBPkqrXhj_U",
+    authDomain: "uasportofolio.firebaseapp.com",
+    projectId: "uasportofolio",
+    storageBucket: "uasportofolio.appspot.com",
+    messagingSenderId: "13265284426",
+    appId: "1:13265284426:web:13f566884b1036396f65b3",
+    measurementId: "G-VXNCXN3B9F"
+};
+firebase.initializeApp(config);
+const messaging = firebase.messaging();
+initializeApp();
+
+function initializeApp() {
+  if ("serviceWorker" in navigator && "PushManager" in window) {
+    console.log("Service Worker and Push is supported");
+    initializeUi();
+    initializeFCM();
+
+    //Register the service worker
+    navigator.serviceWorker
+      .register("/service-worker.js")
+      .then(swReg => {
+        console.log("Service Worker is registered", swReg);
+        swRegistration = swReg;
+      })
+      .catch(error => {
+        console.error("Service Worker Error", error);
+      });
+    navigator.serviceWorker.ready.then(function(registration) {
+      console.log("A service worker is active:", registration.active);
+
+      // At this point, you can call methods that require an active
+      // service worker, like registration.pushManager.subscribe()
+    });
+  } else {
+    console.warn("Push messaging is not supported");
+    notificationButton.textContent = "Push Not Supported";
+  }
+}
+
+function initializeUi() {
+  notificationButton.addEventListener("click", () => {
+    displayNotification();
+  });
+}
+
+function initializeFCM() {
+  messaging
+    .requestPermission()
+    .then(() => {
+      console.log("Notification permission granted.");
+
+      // get the token in the form of promise
+      return messaging.getToken();
+    })
+    .then(token => {
+      TokenElem.innerHTML = "token is : " + token;
+    })
+    .catch(err => {
+      ErrElem.innerHTML = ErrElem.innerHTML + "; " + err;
+      console.log("Unable to get permission to notify.", err);
+    });
+}
+
+function displayNotification() {
+  if (window.Notification && Notification.permission === "granted") {
+    notification();
+  }
+  // If the user hasn't told if he wants to be notified or not
+  // Note: because of Chrome, we are not sure the permission property
+  // is set, therefore it's unsafe to check for the "default" value.
+  else if (window.Notification && Notification.permission !== "denied") {
+    Notification.requestPermission(status => {
+      if (status === "granted") {
+        notification();
+      } else {
+        alert("You denied or dismissed permissions to notifications.");
+      }
+    });
+  } else {
+    // If the user refuses to get notified
+    alert(
+      "You denied permissions to notifications. Please go to your browser or phone setting to allow notifications."
+    );
+  }
+}
+
+function notification() {
+  const options = {
+    body: "Selamat Datang",
+    icon: "assets/images/bell.png"
+  };
+  swRegistration.showNotification(" ", options);
+}
+}
+</script>
+
+
+
+</body>
+
+</html>

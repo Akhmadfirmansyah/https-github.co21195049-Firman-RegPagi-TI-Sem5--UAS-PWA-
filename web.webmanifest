@@ -1,0 +1,23 @@
+{
+    "name": "UAS PWA",
+    "short_name": "PWA",
+    "description": "Membuat Tamplate PWA Untuk UAS",
+    "icons": [
+        {
+            "src": "assets/images/logo192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }, {
+            "src": "assets/images/logo512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "start_url": "/",
+    "display": "fullscreen",
+    "theme_color": "#0d0072",
+    "background_color": "#0d0072",
+    "permissions": ["notifications"]
+}
+
